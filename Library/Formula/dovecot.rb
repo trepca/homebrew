@@ -12,7 +12,8 @@ class Dovecot < Formula
                           "--libexecdir=#{libexec}",
                           "--sysconfdir=#{etc}",
                           "--localstatedir=#{var}",
-                          "--with-ssl=openssl"
+                          "--with-ssl=openssl",
+                          "--with-solr"
     system "make install"
   end
 
